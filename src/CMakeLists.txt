@@ -1,5 +1,5 @@
 # Generic test that uses conan libs
-add_executable(tetris main.cpp components/..)
+add_executable(tetris main.cpp components/.. components/current_figure.h)
 
 target_include_directories(tetris PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
